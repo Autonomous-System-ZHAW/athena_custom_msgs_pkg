@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(custom_msgs_pkg)
+project(athena_custom_msgs_pkg)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -14,7 +14,10 @@ find_package(rosidl_default_generators REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/LedColor.msg"
+  "msg/Missions.msg"
   "msg/PathPoint.msg"
+  "msg/SystemMode.msg"
   "srv/SetWaypoints.srv"
   DEPENDENCIES geometry_msgs
 )

@@ -1,0 +1,9 @@
+uint8 INIT=0
+uint8 READY=1
+uint8 MISSION_SELECT=2
+uint8 MANUAL_JOY=3
+uint8 AUTONOMOUS=4
+uint8 EMERGENCY=5
+uint8 OFF=6
+
+uint8 mode
