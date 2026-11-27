@@ -19,10 +19,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/PathPoint.msg"
   "msg/SystemMode.msg"
   "srv/SetWaypoints.srv"
-  "msg/VescState.msg"
-  "msg/VescStateStamped.msg"
-  "msg/VescImu.msg"
-  "msg/VescImuStamped.msg"
   DEPENDENCIES 
     builtin_interfaces
     std_msgs
